@@ -9,6 +9,12 @@ variable "description" {
   description = "Descrição do repositório"
 }
 
+variable "visibility" {
+  type        = string
+  default     = "public"
+  description = "Visibilidade do repositório"
+}
+
 variable "labels" {
   type        = list(string)
   default     = ["dev", "qa", "plan"]

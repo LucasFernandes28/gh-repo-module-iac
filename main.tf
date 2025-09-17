@@ -1,7 +1,7 @@
 resource "github_repository" "this" {
   name        = var.repository_name
   description = var.description
-  visibility  = "private"
+  visibility  = var.visibility
   auto_init   = true
 }
 
